@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script type="text/javascript" src="pizzaApp.js"></script>
+	</head>
+	
+	<body>
+		<form name="mainForm">
+			<label for="numberOfPeople">Number of People:</label>
+			<input type="text" id="numberOfPeople"></br>
+			
+			<h1>Available Pizza Sizes</h1>
+			
+			<label><input type="checkbox" name="small" value="on"/>Small Pizza (10")</label><br>
+			<label><input type="checkbox" name="medium" value="on"/>Medium Pizza (12")</label><br>
+			<label><input type="checkbox" name="large" value="on"/>Large Pizza (16")</label><br><br>		
+			
+			<input type="button" value="Calculate" onclick="processForm()">
+			
+			<h1>Results</h1>
+			
+			<label for="numSmall">Number of Small Pizzas: </label>
+			<input type="text" id="numSmall"><br>
+			
+			<label for="numMedium">Number of Medium Pizzas: </label>
+			<input type="text" id="numMedium"><br>
+			
+			<label for="numLarge">Number of Large Pizzas: </label>
+			<input type="text" id="numLarge"><br>			
+			
+			<label for="remainder">Number of Remaining Sq. Inches: </label>
+			<input type="text" id="remainder"><br>
+			
+			<label for="slices">Number of Remaining Slices: </label>
+			<input type="text" id="slices"><br>
+						
+		</form>
+	</body>
+
+</html>
