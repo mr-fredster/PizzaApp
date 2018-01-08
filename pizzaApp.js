@@ -72,6 +72,10 @@ function processForm(){
 					appetite = tempAppetite;
 				}
 			}
+			else{
+				numLarge++;
+				appetite -= largeSize;
+			}
 		}
 	}
 	else if(medium == true){
@@ -89,6 +93,10 @@ function processForm(){
 					numMedium++;
 					appetite = tempAppetite;
 				}
+			}
+			else{
+				numMedium++;
+				appetite -= mediumSize;
 			}
 		}
 	}
