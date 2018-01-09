@@ -114,11 +114,12 @@ function processForm(){
 			
 	remaining = -appetite;
 	
-	document.mainForm.numSmall.value = numSmall;
-	document.mainForm.numMedium.value = numMedium;
-	document.mainForm.numLarge.value = numLarge;
-	document.mainForm.remainder.value = remaining.toFixed(2);
-	document.mainForm.slices.value = (remaining/(portion/2)).toFixed(2) + " slices";
+	document.getElementById("numSmall").innerHTML = "Number of Small Pizzas: " + numSmall;
+	document.getElementById("numMedium").innerHTML = "Number of Medium Pizzas: " + numMedium;
+	document.getElementById("numLarge").innerHTML = "Number of Large Pizzas: " + numLarge;
+	document.getElementById("remainder").innerHTML = "Number of Remaining Sq. Inches: " + remaining.toFixed(2);
+	document.getElementById("slices").innerHTML = "Number of Remaining Slices: " + (remaining/(portion/2)).toFixed(2) + " slices";
+	
 }
 
 
